@@ -124,6 +124,7 @@ input[type="button"]:hover {
   <input type="button" value="RSVP ME!" onclick="SendRSVP()" />
  </form>
   <p id="rsvp_confirm">Thanks for your RSVP!</p>
+  <p id="rsvp_invalid">You didn't enter any names to RSVP.</p>
   <p id="rsvp_error">There was a problem sending your RSVP.</p>
 </div>
 <div id="footer" style="overflow: hidden;">
@@ -140,15 +141,22 @@ input[type="button"]:hover {
 <script type="text/javascript">
   function SendRSVP() {
    var names = document.getElementById('people').value;
+   if (names != "") {
    emailjs.init("user_o7YNZjqBdRp36dgWXDkD5");
     emailjs.send("gmail", "template_birthday", { your_names: names })
   	.then(function () {
   	    document.getElementById('rsvp_confirm').style.display = 'block';
-      document.getElementById('rsvp_error').style.display = 'none';
+      	    document.getElementById('rsvp_error').style.display = 'none';
   	}, function (err) {
   	    document.getElementById('rsvp_error').style.display = 'block';
-      document.getElementById('rsvp_confirm').style.display = 'none';
+      	    document.getElementById('rsvp_confirm').style.display = 'none';
   	});
+    }
+    else {
+      document.getElementById('rsvp_invalid').style.display = 'block';
+      document.getElementById('rsvp_confirm').style.display = 'none';
+      document.getElementById('rsvp_error').style.display = 'none';
+    }
     return false;
   }
 </script>
