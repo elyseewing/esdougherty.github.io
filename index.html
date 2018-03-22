@@ -28,7 +28,15 @@ p {
  margin: 0;
  padding: 0;
 }
-@media only screen and (max-width:320px) {
+@media only screen and (min-width : 320px) {
+ p {
+  font-size: 0.5em;
+ }
+ span.break {
+  display: block;
+ }
+}
+@media only screen and (min-width : 480px) {
  p {
   font-size: 0.5em;
  }
