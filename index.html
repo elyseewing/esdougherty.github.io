@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Alexander's Birthday Adventure</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -10,15 +11,16 @@ body {
  color: #1F2E3C;
  font-family: 'Poppins', sans-serif;
  text-align: center;
+ margin: auto;
 }
 h1 {
- font-size: 3em;
+ font-size: 2.8em;
  font-weight: bold;
  margin: 0;
  padding: 0;
 }
 h2 {
- font-size: 2.5em;
+ font-size: 2.2em;
  font-family: 'Sacramento', cursive;
  margin: 0 0 10px 0;
  padding: 0;
@@ -27,8 +29,7 @@ p {
  margin: 0;
  padding: 0;
 }
-@media screen and (min-width : 780px) {
- p, label {
+p, label {
   font-size: 1em;
  }
  span.break {
@@ -46,37 +47,6 @@ p {
     font-size: 1.2em;
     display: none;
   }
-}
-@media screen and (min-width : 320px) {
- p, label {
-  font-size: 0.5em;
- }
- span.break {
-  display: block;
- }
- span.formlabel {
-  margin-bottom: 0.6em !important;
-  margin-right: 0 !important;
- }
- span.formtext {
-  margin-bottom: 1em !important;
-  margin-right: 0 !important;
- }
- p#rsvp_confirm {
-    font-weight: bold;
-    color: #008DB3;
-    font-size: 0.7em;
-    display: none;
-    margin-top: 1em !important;
-  }
-  p#rsvp_error, p#rsvp_invalid {
-    font-weight: bold;
-    color: #A03A3A;
-    font-size: 0.7em;
-    display: none;
-    margin-top: 0.6em !important;
-  }
-}
 a {
  font-weight: bold;
  color: #1F2E3C;
@@ -130,13 +100,57 @@ input[type="button"] {
 input[type="button"]:hover {
  background-color: #008DB3;
 }
+
+@media only screen and (max-width : 500px) {
+/*body::before {
+    content: "tablet to lalalalala fired";
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    background: rgba(255, 255, 0, 0.9); /* Semi-transparent yellow */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }*/
+ p, label {
+  font-size: 0.5em;
+ }
+ span.break {
+  display: block;
+ }
+ span.formlabel {
+  margin-bottom: 0.6em !important;
+  margin-right: 0 !important;
+ }
+ span.formtext {
+  margin-bottom: 1em !important;
+  margin-right: 0 !important;
+ }
+ p#rsvp_confirm {
+    font-weight: bold;
+    color: #008DB3;
+    font-size: 0.7em;
+    display: none;
+    margin-top: 1em !important;
+  }
+  p#rsvp_error, p#rsvp_invalid {
+    font-weight: bold;
+    color: #A03A3A;
+    font-size: 0.7em;
+    display: none;
+    margin-top: 0.6em !important;
+  }
+}
+
 </style>
 </head>
 <body>
 <h1>Alexander's ONE!</h1>
 <h2>Time flies...</h2>
 <div id="header">
- <img src="header.png" style="height: 15em;" />
+ <img src="header.png" style="height: 10em;" />
 </div>
 <div id="details">
  <h2>When?</h2>
