@@ -28,9 +28,12 @@ p {
  margin: 0;
  padding: 0;
 }
-@media only screen {
+@media only screen and (max-width:320px) {
  p {
   font-size: 0.5em;
+ }
+ span.break {
+  display: block;
  }
 }
 a {
@@ -128,11 +131,11 @@ input[type="button"]:hover {
 <div id="rsvp">
  <h2>Be sure to save your seat!</h2>
  <p>Let us know by Wednesday, April 18th.</p>
- <p>Reach us by phone { 717-658-4502 },<br/>email { <a href="mailto:ewing.elyse@gmail.com">ewing.elyse@gmail.com</a> },<br/>or fill out the form below.</p>
+ <p><span class="break">Reach us by phone { 717-658-4502 }, </span><span class="break">email { <a href="mailto:ewing.elyse@gmail.com">ewing.elyse@gmail.com</a> }, </span><span class="break">or fill out the form below.</span></p>
  <form style="margin-top: 20px;">
-  <label style="margin-right: 25px; font-size: 1em;">Names of all people attending:</label>
-  <input type="text" id="people" />
-  <input type="button" value="RSVP ME!" onclick="SendRSVP()" />
+  <span class="break"><label style="margin-right: 25px; font-size: 1em;">Names of all people attending:</label></span>
+  <span class="break"><input type="text" id="people" /></span>
+  <span class="break"><input type="button" value="RSVP ME!" onclick="SendRSVP()" /></span
  </form>
   <p id="rsvp_confirm">Thanks for your RSVP. We can't wait to see you!</p>
   <p id="rsvp_invalid">You didn't enter any names to RSVP.</p>
