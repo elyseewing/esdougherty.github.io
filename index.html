@@ -24,33 +24,58 @@ h2 {
  padding: 0;
 }
 p {
- font-size: 1em;
  margin: 0;
  padding: 0;
 }
-@media only screen and (min-width : 320px) {
- p, label {
-  font-size: 0.5em;
- }
- span.break {
-  display: block;
- }
-}
-@media only screen and (min-width : 480px) {
- p, label {
-  font-size: 0.5em;
- }
- span.break {
-  display: block;
- }
-}
-@media only screen and (min-width : 780px) {
+@media screen and (min-width : 780px) {
  p, label {
   font-size: 1em;
  }
  span.break {
   display: inline;
  }
+ p#rsvp_confirm {
+    font-weight: bold;
+    color: #008DB3;
+    font-size: 1.2em;
+    display: none;
+  }
+  p#rsvp_error, p#rsvp_invalid {
+    font-weight: bold;
+    color: #A03A3A;
+    font-size: 1.2em;
+    display: none;
+  }
+}
+@media screen and (min-width : 320px) {
+ p, label {
+  font-size: 0.5em;
+ }
+ span.break {
+  display: block;
+ }
+ span.formlabel {
+  margin-bottom: 0.6em !important;
+  margin-right: 0 !important;
+ }
+ span.formtext {
+  margin-bottom: 1em !important;
+  margin-right: 0 !important;
+ }
+ p#rsvp_confirm {
+    font-weight: bold;
+    color: #008DB3;
+    font-size: 0.7em;
+    display: none;
+    margin-top: 0.4em !important;
+  }
+  p#rsvp_error, p#rsvp_invalid {
+    font-weight: bold;
+    color: #A03A3A;
+    font-size: 0.7em;
+    display: none;
+    margin-top: 0.4em !important;
+  }
 }
 a {
  font-weight: bold;
@@ -89,14 +114,14 @@ input[type="text"] {
  font-family: 'Poppins',sans-serif;
  font-size: 1em;
  color: #1F2E3C;
- width: 450px;
+ width: 30em;
  margin-right: 25px;
 }
 input[type="button"] {
  color: #FFF;
  background-color: #1F2E3C;
  border: none;
- padding: 2px 12px;
+ padding: 0.2em 1em;
  cursor: pointer;
  font-family: 'Poppins',sans-serif;
  font-size: 1em;
@@ -105,18 +130,6 @@ input[type="button"] {
 input[type="button"]:hover {
  background-color: #008DB3;
 }
-  p#rsvp_confirm {
-    font-weight: bold;
-    color: #008DB3;
-    font-size: 1.2em;
-    display: none;
-  }
-  p#rsvp_error, p#rsvp_invalid {
-    font-weight: bold;
-    color: #A03A3A;
-    font-size: 1.2em;
-    display: none;
-  }
 </style>
 </head>
 <body>
@@ -149,8 +162,8 @@ input[type="button"]:hover {
  <p>Let us know by Wednesday, April 18th.</p>
  <p><span class="break">Reach us by phone { 717-658-4502 }, </span><span class="break">email { <a href="mailto:ewing.elyse@gmail.com">ewing.elyse@gmail.com</a> }, </span><span class="break">or fill out the form below.</span></p>
  <form style="margin-top: 20px;">
-  <span class="break"><label style="margin-right: 25px; font-size: 1em;">Names of all people attending:</label></span>
-  <span class="break"><input type="text" id="people" /></span>
+  <span class="break formlabel"><label style="margin-right: 25px;">Names of all people attending:</label></span>
+  <span class="break formtext"><input type="text" id="people" /></span>
   <span class="break"><input type="button" value="RSVP ME!" onclick="SendRSVP()" /></span
  </form>
   <p id="rsvp_confirm">Thanks for your RSVP. We can't wait to see you!</p>
