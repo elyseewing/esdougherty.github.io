@@ -29,7 +29,7 @@ p {
  padding: 0;
 }
 @media only screen and (min-width : 320px) {
- p {
+ p, label {
   font-size: 0.5em;
  }
  span.break {
@@ -37,11 +37,19 @@ p {
  }
 }
 @media only screen and (min-width : 480px) {
- p {
+ p, label {
   font-size: 0.5em;
  }
  span.break {
   display: block;
+ }
+}
+@media only screen and (min-width : 780px) {
+ p, label {
+  font-size: 1em;
+ }
+ span.break {
+  display: inline;
  }
 }
 a {
