@@ -12,19 +12,19 @@ body {
  text-align: center;
 }
 h1 {
- font-size: 44px;
+ font-size: 3em;
  font-weight: bold;
  margin: 0;
  padding: 0;
 }
 h2 {
- font-size: 40px;
+ font-size: 2.5em;
  font-family: 'Sacramento', cursive;
  margin: 0 0 10px 0;
  padding: 0;
 }
 p {
- font-size: 16px;
+ font-size: 1em;
  margin: 0;
  padding: 0;
 }
@@ -39,17 +39,20 @@ div {
  border-top: 2px dotted #1F2E3C;
  padding: 20px 40px 20px 40px;
 }
-div#venue p.padded-top-15 {
- padding-top: 15px !important;
+div#venue p.padded-top-1 {
+ padding-top: 1em !important;
 }
 div#gifts p {
- padding-bottom: 5px !important;
+ padding-bottom: 0.4em !important;
 }
-div#gifts p.padded-bottom-15 {
- padding-bottom: 15px !important;
+div#gifts p.padded-bottom-1 {
+ padding-bottom: 1em !important;
 }
 div#gifts span {
  font-weight: bold;
+}
+div#rsvp p {
+ padding-bottom: 0.4em !important;
 }
 div#footer {
  text-align: center;
@@ -60,7 +63,7 @@ img.footer {
 }
 input[type="text"] {
  font-family: 'Poppins',sans-serif;
- font-size: 16px;
+ font-size: 1em;
  color: #1F2E3C;
  width: 450px;
  margin-right: 25px;
@@ -72,8 +75,8 @@ input[type="button"] {
  padding: 2px 12px;
  cursor: pointer;
  font-family: 'Poppins',sans-serif;
- font-size: 16px;
- height: 28px;
+ font-size: 1em;
+ height: 1.8em;
 }
 input[type="button"]:hover {
  background-color: #008DB3;
@@ -81,13 +84,13 @@ input[type="button"]:hover {
   p#rsvp_confirm {
     font-weight: bold;
     color: #008DB3;
-    font-size: 24px;
+    font-size: 1.2em;
     display: none;
   }
   p#rsvp_error, p#rsvp_invalid {
     font-weight: bold;
     color: #A03A3A;
-    font-size: 24px;
+    font-size: 1.2em;
     display: none;
   }
 </style>
@@ -96,7 +99,7 @@ input[type="button"]:hover {
 <h1>Alexander's ONE!</h1>
 <h2>Time flies...</h2>
 <div id="header">
- <img src="header.png" style="height: 250px;" />
+ <img src="header.png" style="height: 15em;" />
 </div>
 <div id="details">
  <h2>When?</h2>
@@ -108,21 +111,21 @@ input[type="button"]:hover {
  <p>Alexander's House</p>
  <p>48 North Cope Hill Drive</p>
  <p>Lititz, Pennsylvania 17543</p>
- <p class="padded-top-15">For directions from your location, <a target="_blank" href="https://www.google.com/maps/dir//48+N+Cope+Hill+Dr,+Manheim,+PA+17545,+USA/@40.1520383,-76.3631168,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89c618ab3d9ddd25:0x522bd9909ff4f6e8!2m2!1d-76.3609281!2d40.1520383!3e0">go here</a>.</p>
+ <p class="padded-top-1">For directions from your location, <a target="_blank" href="https://www.google.com/maps/dir//48+N+Cope+Hill+Dr,+Manheim,+PA+17545,+USA/@40.1520383,-76.3631168,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89c618ab3d9ddd25:0x522bd9909ff4f6e8!2m2!1d-76.3609281!2d40.1520383!3e0">go here</a>.</p>
 </div>
 <div id="gifts">
  <h2>Bringing luggage?</h2>
- <p class="padded-bottom-15">Your presence is Alexander's favorite present! But if you're looking for ideas, here is some (hopefully) helpful info.</p>
+ <p class="padded-bottom-1">Your presence is Alexander's favorite present! But if you're looking for ideas, here is some (hopefully) helpful info.</p>
 <p><span>Clothes:</span> Alexander is wearing 12-18 month tops and 18 month pants + pajamas.</p>
 <p><span>College:</span> Alexander has a 529 plan for his college savings, available <a target="_blank" href="https://www.ugift529.com/">here</a> (enter code: P1C-V1T).</p>
-<p><span>For Fun:</span> Alexander is getting a swingset for his birthday, so anything he can use for his new outdoor play area would be a big hit.<br/>He also *loves* books (Amazon wishlist of many books <a target="_blank" href="https://smile.amazon.com/gp/registry/wishlist/1F2RIK6TMNMQK/">here</a>).</p>
+<p><span>For Fun:</span> Alexander is getting a swingset for his birthday, so anything he can use for his new outdoor play area would be a big hit.<br/>He also *loves* books (Amazon list of many books <a target="_blank" href="https://smile.amazon.com/gp/registry/wishlist/1F2RIK6TMNMQK/">here</a>).</p>
 </div>
 <div id="rsvp">
  <h2>Be sure to save your seat!</h2>
- <p>Please let us know by Wednesday, April 18th.</p>
+ <p>Let us know by Wednesday, April 18th.</p>
  <p>Reach us by phone { 717-658-4502 }, email { <a href="mailto:ewing.elyse@gmail.com">ewing.elyse@gmail.com</a> }, or fill out the form below.</p>
  <form style="margin-top: 20px;">
-  <label style="margin-right: 25px; font-size: 16px;">Names of all people attending:</label>
+  <label style="margin-right: 25px; font-size: 1em;">Names of all people attending:</label>
   <input type="text" id="people" />
   <input type="button" value="RSVP ME!" onclick="SendRSVP()" />
  </form>
