@@ -14,7 +14,7 @@ h1 {
 h2 {
  font-size: 2.2em;
  font-family: 'Sacramento', cursive;
- margin: 0 0 5px 0;
+ margin: 0 0 0.25em 0;
  padding: 0;
 }
 p {
@@ -49,13 +49,13 @@ a:hover {
 }
 div {
  border-top: 2px dotted #1F2E3C;
- padding: 20px 40px 20px 40px;
+ padding: 1.25em 2.5em 1.25em 2.5em;
 }
 div#venue p.padded-top-1 {
  padding-top: 1em !important;
 }
 div#gifts p {
- padding-bottom: 0.4em !important;
+ padding-bottom: 0.5em !important;
 }
 div#gifts p.padded-bottom-1 {
  padding-bottom: 1em !important;
@@ -64,20 +64,23 @@ div#gifts span {
  font-weight: bold;
 }
 div#rsvp {
- padding-bottom: 30px !important;
+ padding-bottom: 2em !important;
+}
+div#rsvp label {
+ margin-right: 1.3em;
 }
 div#rsvp p {
- padding-bottom: 0.4em;
+ padding-bottom: 0.5em;
 }
 form {
- margin-top: 10px;
- margin-bottom: 0px !important;
+ margin-top: 0.6em;
+ margin-bottom: 0 !important;
 }
 div#footer {
  text-align: center;
 }
 img.footer {
- margin-right: 4px;
+ margin-right: 0.25em;
  height: 5em;
 }
 input[type="text"] {
@@ -85,7 +88,9 @@ input[type="text"] {
  font-size: 1em;
  color: #1F2E3C;
  width: 30em;
- margin-right: 25px;
+ margin-right: 1.3em;
+ border: none;
+ height: 1.8em;
 }
 input[type="button"] {
  color: #FFF;
@@ -123,7 +128,7 @@ input[type="button"]:hover {
   label {
    display: block;
    margin-bottom: 0.4em !important;
-   margin-right: 0px !important;
+   margin-right: 0 !important;
   }
   input[type="text"] {
    width: 100%;
